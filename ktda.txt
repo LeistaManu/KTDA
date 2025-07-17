@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tea Processing Company Attachment Application</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+
+
+
+        <h1><font colour="blue">Apply for Attachment at Kapkatet Tea processing Campany</font></h1>
+        
+
+ <img src="Tulips.png">
+
+
+        <p>Join us to gain hands-on experience in area of your study.</p>
+    </header>
+
+    <main>
+        <section class="application-form-section">
+            <h2> Attachment Application Form</h2>
+            <form id="attachmentApplicationForm" enctype="multipart/form-data">
+                <div class="form-group">
+                    <label for="fullName">Full Name:</label>
+                    <input type="text" id="fullName" name="fullName" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="+2547XXXXXXXX" pattern="^\+2547[0-9]{8}$" required>
+                    <small>Format: +2547XXXXXXXX</small>
+                </div>
+
+                <div class="form-group">
+                    <label for="institution">Educational Institution:</label>
+                    <input type="text" id="institution" name="institution" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="courseOfStudy">Course of Study:</label>
+                    <input type="text" id="courseOfStudy" name="courseOfStudy" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="attachmentPeriod">Desired Attachment Period:</label>
+                    <select id="attachmentPeriod" name="attachmentPeriod" required>
+                        <option value="">--Select Period--</option>
+                        <option value="3-months">3 Months</option>
+                        <option value="6-months">6 Months</option>
+                        <option value="other">Other (Specify below)</option>
+                    </select>
+                </div>
+
+                 <div class="form-group" id="otherPeriodDiv" style="display: none;">
+                    <label for="otherPeriod">Specify Other Period:</label>
+                    <input type="text" id="otherPeriod" name="otherPeriod">
+                </div>
+
+                <div class="form-group">
+                    <label for="reasonForAttachment">Reason for Attachment:</label>
+                    <textarea id="reasonForAttachment" name="reasonForAttachment" rows="5" required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="cvUpload">Upload CV/Resume (PDF only):</label>
+                    <input type="file" id="cvUpload" name="cvUpload" accept=".pdf" required>
+                    <small>Max file size: 5MB</small>
+                </div>
+
+                <div class="form-group">
+                    <label for="recommendationLetter">Upload Recommendation Letter (Optional, PDF only):</label>
+                    <input type="file" id="recommendationLetter" name="recommendationLetter" accept=".pdf">
+                    <small>Max file size: 5MB</small>
+                </div>
+
+                <div class="form-group checkbox-group">
+                    <input type="checkbox" id="termsAccepted" name="termsAccepted" required>
+                    <label for="termsAccepted">I agree to the <a href="#" id="openTermsModal">terms and conditions</a>.</label>
+                </div>
+
+                <button type="submit">Submit Application</button>
+
+                <div id="formMessages" class="form-messages"></div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Tea Processing Factory. All rights reserved.</p>
+    </footer>
+
+    <div id="termsModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>Terms and Conditions</h2>
+            <p>Please read these terms carefully before submitting your application:</p>
+            <ul>
+                <li>All information provided must be accurate and truthful.</li>
+                <li>Submission of this form does not guarantee an attachment placement.</li>
+                <li>We reserve the right to verify all information provided.</li>
+                <li>Personal data will be processed in accordance with our privacy policy.</li>
+                <li>Applicants may be contacted for interviews or further information.</li>
+            </ul>
+            <button class="close-button">Close</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

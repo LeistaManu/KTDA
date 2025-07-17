@@ -1,0 +1,9 @@
+POS System Integration:
+
+Most modern supermarkets use comprehensive POS software (e.g., from providers like SimbaPOS, or custom solutions).
+
+This POS software is integrated with Safaricom's Daraja API (the M-Pesa API platform).
+
+When a customer chooses to pay by M-Pesa, the cashier enters the amount and the customer's phone number into the POS system.
+
+The POS system then uses the Daraja API to trigger an STK Push (Sim Tool Kit Push). This is the technology that sends the M-Pesa payment prompt directly to the customer's phone.
